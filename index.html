@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head><script>(function(w,i,g){w[g]=w[g]||[];if(typeof w[g].push=='function')w[g].push(i)})
+(window,'AW-16959411921','google_tags_first_party');</script><script async src="/akgw/"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('set', 'developer_id.dYzg1YT', true);
+				gtag('config', 'AW-16959411921');
+			</script>
+			
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.jpeg" type="image/x-icon">
+    <title>SAHEL COLLEGE OF HEALTH GUSAU - Excellence in Health Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero-slider {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .hero-slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .hero-slide.active {
+            opacity: 1;
+        }
+
+        .hero-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(30, 64, 175, 0.7), rgba(5, 150, 105, 0.6));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .gallery-slider {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .gallery-slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .gallery-slide.active {
+            opacity: 1;
+        }
+
+        .gallery-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 250px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            border-radius: 8px;
+            margin-top: 8px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #111827;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #F3F4F6;
+        }
+
+        .nav-sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero-slider {
+                height: 70vh;
+            }
+
+            .gallery-slider {
+                height: 300px;
+            }
+
+            .section-padding {
+                padding: 60px 0;
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1E40AF;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1E3A8A;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: white;
+            z-index: 2000;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="bg-white shadow-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-4">
+                    <img src="logo.jpeg" alt="SAHEL COLLEGE LOGO" class="h-16 w-16 object-contain">
+                    <!--<img src="https://mgx-backend-cdn.metadl.com/generate/images/932769/2026-02-01/97d32510-b4a1-4e21-bfa8-fc09548d20c8.png" alt="SAHEL COLLEGE LOGO" class="h-16 w-16 object-contain">-->
+                    <div>
+                        <h1 class="text-xl font-bold text-blue-900">SAHEL COLLEGE OF HEALTH</h1>
+                        <p class="text-sm text-gray-600">GUSAU</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#home" class="text-gray-700 hover:text-blue-900 font-medium transition">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-900 font-medium transition">About</a>
+                    <a href="#leadership" class="text-gray-700 hover:text-blue-900 font-medium transition">Leadership</a>
+                    <div class="dropdown relative">
+                        <button class="text-gray-700 hover:text-blue-900 font-medium transition flex items-center">
+                            Departments <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#dept-nutrition">Nutrition and Dietetics</a>
+                            <a href="#dept-public">Public Health</a>
+                            <a href="#dept-community">Community Health</a>
+                        </div>
+                    </div>
+                    <a href="#gallery" class="text-gray-700 hover:text-blue-900 font-medium transition">Gallery</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-900 font-medium transition">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-2xl font-bold text-blue-900">Menu</h2>
+            <button id="mobile-menu-close" class="text-gray-700">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+        </div>
+        <div class="flex flex-col space-y-4">
+            <a href="#home" class="text-gray-700 text-lg font-medium mobile-link">Home</a>
+            <a href="#about" class="text-gray-700 text-lg font-medium mobile-link">About</a>
+            <a href="#leadership" class="text-gray-700 text-lg font-medium mobile-link">Leadership</a>
+            <div class="border-t pt-2">
+                <p class="text-gray-500 text-sm mb-2">Departments</p>
+                <!--<select name="" id="">
+                    <option value=""><a href="#dept-nutrition" class="text-gray-700 text-lg pl-4 block mb-2 mobile-link">Nutrition and Dietetics</a></option>
+                    <option value=""><a href="#dept-public" class="text-gray-700 text-lg pl-4 block mb-2 mobile-link">Public Health</a></option>
+                    <option value=""><a href="#dept-community" class="text-gray-700 text-lg pl-4 block mb-2 mobile-link">Community Health</a></option>
+                </select> -->
+                <a href="#dept-nutrition" class="text-gray-700 text-lg pl-4 block mb-2 mobile-link">Nutrition and Dietetics</a>
+                <a href="#dept-public" class="text-gray-700 text-lg pl-4 block mb-2 mobile-link">Public Health</a>
+                <a href="#dept-community" class="text-gray-700 text-lg pl-4 block mb-2 mobile-link">Community Health</a>
+            </div>
+            <a href="#gallery" class="text-gray-700 text-lg font-medium mobile-link">Gallery</a>
+            <a href="#contact" class="text-gray-700 text-lg font-medium mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section with Auto-Sliding Images -->
+    <section id="home" class="hero-slider">
+        <div class="hero-slide active">
+            <img src="https://mgx-backend-cdn.metadl.com/generate/images/932769/2026-02-01/f980f840-8e1c-46d6-94fb-9c408c53cde6.png" alt="College Building">
+        </div>
+        <div class="hero-slide">
+            <img src="slide_1.jpeg" alt="Students Learning">
+        </div>
+        <div class="hero-slide">
+            <img src="https://mgx-backend-cdn.metadl.com/generate/images/932769/2026-02-01/d15a91c1-d27e-4cf3-9757-437aeace8b35.png" alt="Students Learning">
+        </div>
+        <div class="hero-slide">
+            <img src="slide_2.jpeg" alt="Medical Equipment">
+        </div>
+        <div class="hero-slide">
+            <img src="https://mgx-backend-cdn.metadl.com/generate/images/932769/2026-02-01/80b71fab-9498-44f0-bf85-8ff7417c036e.png" alt="Medical Equipment">
+        </div>
+        <div class="hero-slide">
+            <img src="slide_3.jpeg" alt="Campus Life">
+        </div>
+        <div class="hero-slide">
+            <img src="https://mgx-backend-cdn.metadl.com/generate/images/932769/2026-02-01/e99380a1-5b27-4109-91a2-f9681fb11a64.png" alt="Campus Life">
+        </div>
+        <div class="hero-overlay">
+            <div class="text-center text-white px-4 max-w-4xl">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Welcome to <br>SAHEL COLLEGE OF HEALTH GUSAU</h1>
+                <p class="text-xl md:text-2xl mb-8">Empowering Future Healthcare Leaders Through Excellence in Education</p>
+                <a href="#about" class="inline-block bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition">Explore Our Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About SAHEL COLLEGE OF HEALTH</h2>
+                <div class="w-24 h-1 bg-blue-900 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6" style="text-align: justify;">
+                        SAHEL COLLEGE OF HEALTH GUSAU is a premier institution dedicated to providing world-class education in health sciences. Established with the vision of transforming healthcare delivery in Nigeria and beyond, we are committed to nurturing competent, compassionate, and innovative healthcare professionals.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed" style="text-align: justify;">
+                        Our state-of-the-art facilities, experienced faculty, and comprehensive curriculum ensure that our students receive the best possible education to meet the evolving challenges of the healthcare sector.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://mgx-backend-cdn.metadl.com/generate/images/932769/2026-02-01/d15a91c1-d27e-4cf3-9757-437aeace8b35.png" alt="College Building Image" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission, Vision, Core Values -->
+    <section class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Mission -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                    <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bullseye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        To provide quality health education that produces competent healthcare professionals equipped with knowledge, skills, and ethical values to improve community health and contribute to national development.
+                    </p>
+                </div>
+
+                <!-- Vision -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-eye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        To be a leading institution in health education, recognized for excellence in training, research, and community service, producing graduates who are agents of positive change in healthcare delivery.
+                    </p>
+                </div>
+
+                <!-- Core Values -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                    <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Core Values</h3>
+                    <ul class="text-gray-700 leading-relaxed space-y-2">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Excellence in Education</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Integrity and Ethics</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Innovation and Research</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Community Service</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Student-Centered Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Leadership</h2>
+                <div class="w-24 h-1 bg-blue-900 mx-auto"></div>
+            </div>
+
+            <!-- Founder -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">The Founder/Director</h3>
+                <div class="bg-gray-50 rounded-xl shadow-lg p-8 max-w-4xl mx-auto profile-card">
+                    <div class="grid md:grid-cols-3 gap-8 items-center">
+                        <div class="md:col-span-1">
+                            <img src="Nuhu_bashir.jpeg" alt="Founder" class="rounded-lg shadow-md w-full">
+                        </div>
+                        <div class="md:col-span-2">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Nuhu Bashir Khalil</h4>
+                            <p class="text-blue-900 font-semibold mb-4">Founder/Director</p>
+                            <div class="space-y-2 text-gray-700">
+                                <p><strong>Educational Background:</strong></p>
+                                <ul class="list-disc list-inside space-y-1 ml-4">
+                                    <!--<li>Ph.D. in Public Health, [University Name]</li> -->
+                                    <li><b>M.Sc. Business Administration (MBA)</b><br>Atlanta College of Liberal Arts and Sciences. (in view)</li>
+                                    <li><b>B.Sc. Political Science</b><br>Usmanu Danfodiyo University, Sokoto.</li>
+                                </ul>
+                                <p class="mt-4" style="text-align: justify;">
+                                    Nuhu Bashir Khalil is a seasoned administrator, entrepreneur, and public service professional with-disciplinary experience spanning politics, education, health services, and corporate management. <br> He received his early education at Dan Turai Model Primary School, Gusau (1998–2004), and completed his secondary education at Federal Government College, Sokoto (2004–2010). His academic and professional journey reflects a strong commitment to leadership, governance, and human development. <br>Mr. Khalil has extensive administrative experience in public service, educational institutions, and the health sector, where he has contributed to organizational development, policy implementation, and service delivery support. His involvement in the health sector includes management and administrative roles that support healthcare education, institutional coordination, and community-focused health initiatives aimed at improving access, efficiency, and service quality. <br> As the Chief Executive Officer of several private corporate organizations, Mr. Khalil has successfully led initiatives that promote education, healthcare development, youth empowerment, and employment creation. His work has positively impacted underserved and less privileged communities through capacity building, institutional support, and sustainable development programs. <br> Driven by a vision of inclusive growth and social responsibility, Nuhu Bashir Khalil remains committed to strengthening systems in education, health, and enterprise for the overall advancement of society.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Registrar -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">The Registrar</h3>
+                <div class="bg-gray-50 rounded-xl shadow-lg p-8 max-w-4xl mx-auto profile-card">
+                    <div class="grid md:grid-cols-3 gap-8 items-center">
+                        <div class="md:col-span-1">
+                            <img src="Ishaka_Idris_maikwai.jpeg" alt="Registrar" class="rounded-lg shadow-md w-full">
+                        </div>
+                        <div class="md:col-span-2">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Ishaka Idris Maikwai BA, PGDE, MA </h4>
+                            <p class="text-blue-900 font-semibold mb-4">College Registrar</p>
+                            <div class="space-y-2 text-gray-700">
+                                <p><strong>Educational Background:</strong></p>
+                                <ul class="list-disc list-inside space-y-1 ml-4">
+                                    <li>PhD. Federal University Dutsin Ma Katsina (in view)</li>
+                                    <li>M.A. English Language, Federal University Dutsin Ma Katsina</li>
+                                    <li>PGDE. Usmanu Danfodiyo University Sokoto</li>
+                                    <li>B.A. English Language, Usmanu Danfodiyo University Sokoto</li>
+                                </ul>
+                                <!-- <p class="mt-4">
+                                    An experienced administrator with exceptional organizational skills and a deep commitment to academic excellence. The Registrar oversees all administrative functions ensuring smooth operations and student success.
+                                </p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Staff -->
+            <div>
+                <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">Key Staff Members</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Staff 1 -->
+                    <div class="bg-gray-50 rounded-xl shadow-lg p-6 profile-card">
+                        <img src="Musa_Isah.jpeg" alt="Staff Member" class="rounded-lg shadow-md w-full mb-4">
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Musa Isah</h4>
+                        <p class="text-blue-900 font-semibold mb-3">Bursar/ Student Affairs Officer</p>
+                        <div class="text-sm text-gray-700 space-y-1">
+                            <p><strong>Qualifications:</strong></p>
+                            <ul class="list-disc list-inside ml-2">
+                                <!--<li>Ph.D. in Health Sciences</li>
+                                <li>M.Sc. in Public Health</li> -->
+                                <li>B.Sc. Ed Biology</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Staff 2 -->
+                    <div class="bg-gray-50 rounded-xl shadow-lg p-6 profile-card">
+                        <img src="Adamu_Ibrahim.jpeg" alt="Staff Member" class="rounded-lg shadow-md w-full mb-4">
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Adamu Ibrahim</h4>
+                        <p class="text-blue-900 font-semibold mb-3">Examination Officer</p>
+                        <div class="text-sm text-gray-700 space-y-1">
+                            <p><strong>Qualifications:</strong></p>
+                            <ul class="list-disc list-inside ml-2">
+                                <li>Ahmadu Bello University Zaria</li>
+                                <li>Ahmadu Bello University Zaria</li>
+                                <li>NCE. Shehu Shagari College of Education Sokoto</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Staff 3 
+                    <div class="bg-gray-50 rounded-xl shadow-lg p-6 profile-card">
+                        <img src="https://mgx-backend-cdn.metadl.com/generate/images/932769/2026-02-01/a0306741-6dfa-4b95-b891-d7c50e74ec7d.png" alt="Staff Member" class="rounded-lg shadow-md w-full mb-4">
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">[Staff Name 3]</h4>
+                        <p class="text-blue-900 font-semibold mb-3">Chief Librarian</p>
+                        <div class="text-sm text-gray-700 space-y-1">
+                            <p><strong>Qualifications:</strong></p>
+                            <ul class="list-disc list-inside ml-2">
+                                <li>M.L.S. in Library Science</li>
+                                <li>B.A. in Information Management</li>
+                                <li>Digital Resources Specialist</li>
+                            </ul>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Departments</h2>
+                <div class="w-24 h-1 bg-blue-900 mx-auto"></div>
+            </div>
+
+            <!-- Department of Nutrition and Dietetics -->
+            <div id="dept-nutrition" class="mb-16 bg-white rounded-xl shadow-lg p-8">
+                <div class="flex items-center mb-6">
+                    <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mr-4">
+                        <i class="fas fa-apple-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900">Department of Nutrition and Dietetics</h3>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <img src="https://mgx-backend-cdn.metadl.com/generate/images/932769/2026-02-01/c06e198a-ef23-4771-890f-68ec54cf43c6.png" alt="Nutrition Lab" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Our Nutrition and Dietetics department is dedicated to training professionals who understand the critical role of nutrition in health promotion, disease prevention, and therapeutic management.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Students gain hands-on experience in our state-of-the-art nutrition laboratory and participate in community nutrition programs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- HOD -->
+                <div class="bg-gray-50 rounded-lg p-6 mb-6">
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Head of Department</h4>
+                    <div class="grid md:grid-cols-4 gap-6 items-center">
+                        <div>
+                            <img src="https://mgx-backend-cdn.metadl.com/generate/images/932769/2026-02-01/a0306741-6dfa-4b95-b891-d7c50e74ec7d.png" alt="HOD Nutrition" class="rounded-lg shadow-md w-full">
+                        </div>
+                        <div class="md:col-span-3">
+                            <h5 class="text-xl font-bold text-gray-900 mb-2">Muazu Aliyu Gada</h5>
+                            <p class="text-blue-900 font-semibold mb-3">Head of Department</p>
+                            <div class="text-gray-700">
+                                <p><strong>Educational Background:</strong></p>
+                                <ul class="list-disc list-inside ml-4 space-y-1">
+                                    <!--<li>Ph.D. in Nutrition Science, [University]</li> -->
+                                    <li>M.Sc. Nutritional Biochemistry, Bayero University Kano</li>
+                                    <li>B.Sc. Biochemistry, Usmanu Danfodiyo University Sokoto</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Staff -->
+                <div class="mb-6">
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Key Staff</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h5 class="text-lg font-bold text-gray-900 mb-2">[Staff Name]</h5>
+                            <p class="text-blue-900 font-semibold mb-2">Senior Lecturer</p>
+                            <p class="text-sm text-gray-700">M.Sc. in Food Science, B.Sc. in Nutrition</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h5 class="text-lg font-bold text-gray-900 mb-2">[Staff Name]</h5>
+                            <p class="text-blue-900 font-semibold mb-2">Laboratory Coordinator</p>
+                            <p class="text-sm text-gray-700">M.Sc. in Dietetics, B.Sc. in Biochemistry</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects/Seminars -->
+                <div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Key Projects & Seminars</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong class="text-gray-900">Community Nutrition Assessment Program</strong>
+                                <p class="text-gray-700 text-sm">Ongoing nutritional assessment and intervention in local communities</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong class="text-gray-900">Annual Nutrition and Health Seminar</strong>
+                                <p class="text-gray-700 text-sm">Bringing together experts to discuss current trends in nutrition science</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong class="text-gray-900">School Feeding Program Research</strong>
+                                <p class="text-gray-700 text-sm">Research on improving nutritional outcomes in school feeding programs</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Department of Public Health -->
+            <div id="dept-public" class="mb-16 bg-white rounded-xl shadow-lg p-8">
+                <div class="flex items-center mb-6">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mr-4">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900">Department of Public Health</h3>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <img src="https://mgx-backend-cdn.metadl.com/generate/images/932769/2026-02-01/032ac60d-1921-47fb-8bd6-51e2295bd606.png" alt="Public Health" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            The Public Health department focuses on population health, disease prevention, health promotion, and health policy. Our graduates are equipped to address public health challenges at local, national, and global levels.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Students engage in field work, epidemiological studies, and community health interventions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- HOD -->
+                <div class="bg-gray-50 rounded-lg p-6 mb-6">
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Head of Department</h4>
+                    <div class="grid md:grid-cols-4 gap-6 items-center">
+                        <div>
+                            <img src="Habibu_Abubakar.jpeg" alt="HOD Public Health" class="rounded-lg shadow-md w-full">
+                        </div>
+                        <div class="md:col-span-3">
+                            <h5 class="text-xl font-bold text-gray-900 mb-2">Habibu Abubakar</h5>
+                            <p class="text-blue-900 font-semibold mb-3">Head of Department</p>
+                            <div class="text-gray-700">
+                                <p><strong>Educational Background:</strong></p>
+                                <ul class="list-disc list-inside ml-4 space-y-1">
+                                    <!--<li>Ph.D. in Public Health, [University]</li> -->
+                                    <li>M.Ed. Research Measurement and Evaluation (in view)</li>
+                                    <li>B.Sc. Computer Science</li> 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Staff -->
+                <div class="mb-6">
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Key Staff</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h5 class="text-lg font-bold text-gray-900 mb-2">[Staff Name]</h5>
+                            <p class="text-blue-900 font-semibold mb-2">Associate Professor</p>
+                            <p class="text-sm text-gray-700">Ph.D. in Epidemiology, M.P.H. in Health Policy</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h5 class="text-lg font-bold text-gray-900 mb-2">[Staff Name]</h5>
+                            <p class="text-blue-900 font-semibold mb-2">Senior Lecturer</p>
+                            <p class="text-sm text-gray-700">M.P.H. in Environmental Health, B.Sc. in Biology</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects/Seminars -->
+                <div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Key Projects & Seminars</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong class="text-gray-900">Disease Surveillance and Control Initiative</strong>
+                                <p class="text-gray-700 text-sm">Monitoring and responding to disease outbreaks in the region</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong class="text-gray-900">International Public Health Conference</strong>
+                                <p class="text-gray-700 text-sm">Annual conference featuring global health experts and researchers</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong class="text-gray-900">Maternal and Child Health Program</strong>
+                                <p class="text-gray-700 text-sm">Community-based interventions to improve maternal and child health outcomes</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Department of Community Health -->
+            <div id="dept-community" class="bg-white rounded-xl shadow-lg p-8">
+                <div class="flex items-center mb-6">
+                    <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mr-4">
+                        <i class="fas fa-heartbeat text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900">Department of Community Health</h3>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <img src="https://mgx-backend-cdn.metadl.com/generate/images/932769/2026-02-01/032ac60d-1921-47fb-8bd6-51e2295bd606.png" alt="Community Health" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            The Community Health department trains health workers who provide essential primary healthcare services at the grassroots level. Our program emphasizes practical skills and community engagement.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Students participate in community health outreach programs and gain experience in rural health settings.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- HOD -->
+                <div class="bg-gray-50 rounded-lg p-6 mb-6">
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Head of Department</h4>
+                    <div class="grid md:grid-cols-4 gap-6 items-center">
+                        <div>
+                            <img src="https://mgx-backend-cdn.metadl.com/generate/images/932769/2026-02-01/a0306741-6dfa-4b95-b891-d7c50e74ec7d.png" alt="HOD Community Health" class="rounded-lg shadow-md w-full">
+                        </div>
+                        <div class="md:col-span-3">
+                            <h5 class="text-xl font-bold text-gray-900 mb-2">Dr. [HOD Name]</h5>
+                            <p class="text-blue-900 font-semibold mb-3">Head of Department</p>
+                            <div class="text-gray-700">
+                                <p><strong>Educational Background:</strong></p>
+                                <ul class="list-disc list-inside ml-4 space-y-1">
+                                    <li>Ph.D. in Community Health, [University]</li>
+                                    <li>M.Sc. in Primary Healthcare, [University]</li>
+                                    <li>B.Sc. in Community Health, [University]</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Staff -->
+                <div class="mb-6">
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Key Staff</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h5 class="text-lg font-bold text-gray-900 mb-2">[Staff Name]</h5>
+                            <p class="text-blue-900 font-semibold mb-2">Senior Lecturer</p>
+                            <p class="text-sm text-gray-700">M.Sc. in Community Health, B.Sc. in Nursing</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h5 class="text-lg font-bold text-gray-900 mb-2">[Staff Name]</h5>
+                            <p class="text-blue-900 font-semibold mb-2">Clinical Instructor</p>
+                            <p class="text-sm text-gray-700">M.Sc. in Public Health, Diploma in Community Health</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects/Seminars -->
+                <div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Key Projects & Seminars</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong class="text-gray-900">Rural Health Outreach Program</strong>
+                                <p class="text-gray-700 text-sm">Regular health camps and medical services in underserved rural communities</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong class="text-gray-900">Community Health Workers Training Workshop</strong>
+                                <p class="text-gray-700 text-sm">Capacity building for community health workers across the state</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong class="text-gray-900">Immunization Coverage Enhancement Project</strong>
+                                <p class="text-gray-700 text-sm">Improving vaccination rates through community mobilization and education</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Campus Life Gallery</h2>
+                <div class="w-24 h-1 bg-blue-900 mx-auto"></div>
+            </div>
+
+            <div class="relative">
+                <div class="gallery-slider">
+                    <div class="gallery-slide active">
+                        <img src="gallery_1.jpeg" alt="Graduation Ceremony">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-8">
+                            <h3 class="text-white text-2xl font-bold mb-2">Matriculation Ceremony 2025</h3>
+                            <p class="text-white">Celebrating the success of our graduating class with families and faculty members</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery_2.jpeg" alt="Academic Seminar">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-8">
+                            <h3 class="text-white text-2xl font-bold mb-2">International Health Seminar</h3>
+                            <p class="text-white">Leading health experts sharing knowledge and best practices with our students</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery_3.jpeg" alt="Community Outreach">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-8">
+                            <h3 class="text-white text-2xl font-bold mb-2">Community Health Outreach</h3>
+                            <p class="text-white">Students providing healthcare services to underserved communities</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery_4.jpeg" alt="Campus Activities">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-8">
+                            <h3 class="text-white text-2xl font-bold mb-2">Student Life on Campus</h3>
+                            <p class="text-white">Vibrant campus atmosphere with students engaging in various activities</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery_5.jpeg" alt="Learning Sessions">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-8">
+                            <h3 class="text-white text-2xl font-bold mb-2">Interactive Learning Sessions</h3>
+                            <p class="text-white">Students engaged in collaborative learning and practical training</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery_7.jpeg" alt="Laboratory Work">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-8">
+                            <h3 class="text-white text-2xl font-bold mb-2">Laboratory Practical Sessions</h3>
+                            <p class="text-white">Hands-on experience in our state-of-the-art laboratories</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery_8.jpeg" alt="Laboratory Work">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-8">
+                            <h3 class="text-white text-2xl font-bold mb-2">Laboratory Practical Sessions</h3>
+                            <p class="text-white">Hands-on experience in our state-of-the-art laboratories</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery_9.jpeg" alt="Laboratory Work">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-8">
+                            <h3 class="text-white text-2xl font-bold mb-2">Laboratory Practical Sessions</h3>
+                            <p class="text-white">Hands-on experience in our state-of-the-art laboratories</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery_10.jpeg" alt="Laboratory Work">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-8">
+                            <h3 class="text-white text-2xl font-bold mb-2">Laboratory Practical Sessions</h3>
+                            <p class="text-white">Hands-on experience in our state-of-the-art laboratories</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery_11.jpeg" alt="Laboratory Work">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-8">
+                            <h3 class="text-white text-2xl font-bold mb-2">Laboratory Practical Sessions</h3>
+                            <p class="text-white">Hands-on experience in our state-of-the-art laboratories</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery_12.jpeg" alt="Laboratory Work">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-8">
+                            <h3 class="text-white text-2xl font-bold mb-2">Laboratory Practical Sessions</h3>
+                            <p class="text-white">Hands-on experience in our state-of-the-art laboratories</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery_13.jpeg" alt="Laboratory Work">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-8">
+                            <h3 class="text-white text-2xl font-bold mb-2">Laboratory Practical Sessions</h3>
+                            <p class="text-white">Hands-on experience in our state-of-the-art laboratories</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery_14.jpeg" alt="Laboratory Work">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-8">
+                            <h3 class="text-white text-2xl font-bold mb-2">Laboratory Practical Sessions</h3>
+                            <p class="text-white">Hands-on experience in our state-of-the-art laboratories</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery_15.jpeg" alt="Laboratory Work">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-8">
+                            <h3 class="text-white text-2xl font-bold mb-2">Laboratory Practical Sessions</h3>
+                            <p class="text-white">Hands-on experience in our state-of-the-art laboratories</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Controls -->
+                <button id="gallery-prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-900 w-12 h-12 rounded-full shadow-lg transition z-10">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="gallery-next" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-900 w-12 h-12 rounded-full shadow-lg transition z-10">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <div class="w-24 h-1 bg-blue-900 mx-auto"></div>
+                <p class="text-gray-600 mt-4">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+
+                <div class="bg-white rounded-xl shadow-lg p-8">
+    <h3 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
+    <form action="https://formsubmit.co/sahelcollegeofhealthgusau@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://sahelcollegeofhealthsciencesgusau.com.ng/thank-you.html">
+        <input type="hidden" name="_subject" value="New Inquiry from SAHEL COLLEGE Website">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        
+        <div class="mb-4">
+            <label class="block text-gray-700 font-semibold mb-2">Full Name</label>
+            <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900">
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-gray-700 font-semibold mb-2">Email Address</label>
+            <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900">
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-gray-700 font-semibold mb-2">Phone Number</label>
+            <input type="tel" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900">
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-gray-700 font-semibold mb-2">Subject</label>
+            <input type="text" name="subject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900">
+        </div>
+
+        <div class="mb-6">
+            <label class="block text-gray-700 font-semibold mb-2">Message</label>
+            <textarea name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-blue-900 text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+            Send Message
+        </button>
+    </form>
+</div>
+
+                <!-- Contact Information -->
+                <div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Address</h4>
+                                    <p class="text-gray-700">Old Paila Restaurant, New market road, <br>Gusau, Zamfara State, Nigeria</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
+                                    <p class="text-gray-700"><a href="mailto:sahelcollegeofhealthgusau@gmail.com" class="#">sahelcollegeofhealthgusau@gmail.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Phone</h4>
+                                    <p class="text-gray-700">+2348146671009</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center text-white hover:bg-pink-700 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white hover:bg-gray-800 transition">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white hover:bg-green-700 transition">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SAHEL COLLEGE OF HEALTH</h3>
+                    <p class="text-gray-400 text-sm">
+                        Excellence in health education, training future healthcare leaders for a healthier tomorrow.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://sahelcollegeofhealthsciencesgusau.com.ng" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#leadership" class="text-gray-400 hover:text-white transition">Leadership</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white transition">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Departments -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Departments</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#dept-nutrition" class="text-gray-400 hover:text-white transition">Nutrition and Dietetics</a></li>
+                        <li><a href="#dept-public" class="text-gray-400 hover:text-white transition">Public Health</a></li>
+                        <li><a href="#dept-community" class="text-gray-400 hover:text-white transition">Community Health</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Gusau, Zamfara State</li>
+                        <li><i class="fas fa-envelope mr-2"></i><a href="mailto:sahelcollegeofhealthgusau@gmail.com" class="#">sahelcollegeofhealthgusau@gmail.com</a></li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> +2348146671009</li>
+                    </ul>
+                    <div class="flex space-x-3 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2026 SAHEL COLLEGE OF HEALTH GUSAU. All rights reserved.
+                </p>
+                <p class="text-gray-400 text-sm mt-2">
+                    <a href="https://leemawebsolutions.net" target="_blank" class="text-blue-400 hover:text-blue-300 transition">Powered by Leema Web Solutions</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Hero Slider (1 second interval)
+        let heroSlideIndex = 0;
+        const heroSlides = document.querySelectorAll('.hero-slide');
+
+        function showHeroSlide() {
+            heroSlides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                if (index === heroSlideIndex) {
+                    slide.classList.add('active');
+                }
+            });
+            heroSlideIndex = (heroSlideIndex + 1) % heroSlides.length;
+        }
+
+        setInterval(showHeroSlide, 1000);
+
+        // Gallery Slider (2 second interval)
+        let gallerySlideIndex = 0;
+        const gallerySlides = document.querySelectorAll('.gallery-slide');
+
+        function showGallerySlide(n) {
+            if (n >= gallerySlides.length) gallerySlideIndex = 0;
+            if (n < 0) gallerySlideIndex = gallerySlides.length - 1;
+
+            gallerySlides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                if (index === gallerySlideIndex) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+
+        function nextGallerySlide() {
+            gallerySlideIndex++;
+            showGallerySlide(gallerySlideIndex);
+        }
+
+        function prevGallerySlide() {
+            gallerySlideIndex--;
+            showGallerySlide(gallerySlideIndex);
+        }
+
+        // Auto advance gallery
+        setInterval(nextGallerySlide, 2000);
+
+        // Gallery controls
+        document.getElementById('gallery-next').addEventListener('click', nextGallerySlide);
+        document.getElementById('gallery-prev').addEventListener('click', prevGallerySlide);
+
+        // Sticky Navigation
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('nav-sticky');
+            } else {
+                navbar.classList.remove('nav-sticky');
+            }
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.remove('active');
+                }
+            });
+        });
+
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenu.classList.add('active');
+        });
+
+        mobileMenuClose.addEventListener('click', function() {
+            mobileMenu.classList.remove('active');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Form Validation
+        const contactForm = document.querySelector('form');
+        contactForm.addEventListener('submit', function(e) {
+            const name = this.querySelector('input[name="name"]').value;
+            const email = this.querySelector('input[name="email"]').value;
+            const phone = this.querySelector('input[name="phone"]').value;
+            const message = this.querySelector('textarea[name="message"]').value;
+
+            if (!name || !email || !phone || !message) {
+                e.preventDefault();
+                alert('Please fill in all required fields');
+            }
+        });
+    </script>
+
+<script src="https://public-frontend-cos.metadl.com/commonfile/appPlugins-atoms-prod-1768232029834.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script></body>
+
+</html>
