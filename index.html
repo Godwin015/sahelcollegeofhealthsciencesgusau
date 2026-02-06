@@ -98,10 +98,6 @@
             margin-top: 8px;
         }
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
         .dropdown-content a {
             color: #111827;
             padding: 12px 16px;
@@ -208,15 +204,15 @@
                     <a href="#home" class="text-gray-700 hover:text-blue-900 font-medium transition">Home</a>
                     <a href="#about" class="text-gray-700 hover:text-blue-900 font-medium transition">About</a>
                     <a href="#leadership" class="text-gray-700 hover:text-blue-900 font-medium transition">Leadership</a>
-                    <div class="dropdown relative">
-                        <button class="text-gray-700 hover:text-blue-900 font-medium transition flex items-center">
-                            Departments <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#dept-nutrition">Nutrition and Dietetics</a>
-                            <a href="#dept-public">Public Health</a>
-                            <a href="#dept-community">Community Health</a>
+                    <div class="relative inline-block text-left">
+                        <button id="dept-btn" class="text-gray-700 hover:text-blue-900 font-medium transition flex items-center focus:outline-none">Departments<i class="fas fa-chevron-down ml-1 text-xs"></i></button>
+                    <div id="dept-dropdown" class="hidden absolute right-0 mt-2 w-56 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50">
+                        <div class="py-1">
+                            <a href="#dept-nutrition" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition">Nutrition and Dietetics</a>
+                            <a href="#dept-public" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition">Public Health</a>
+                            <a href="#dept-community" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition">Community Health</a>
                         </div>
+                    </div>
                     </div>
                     <a href="#gallery" class="text-gray-700 hover:text-blue-900 font-medium transition">Gallery</a>
                     <a href="#contact" class="text-gray-700 hover:text-blue-900 font-medium transition">Contact</a>
@@ -1337,6 +1333,29 @@
                     // Close mobile menu if open
                     document.getElementById('mobile-menu').classList.remove('active');
                 }
+            });
+        });
+
+        // Toggle Departments Dropdown on Click
+        const deptBtn = document.getElementById('dept-btn');
+        const deptDropdown = document.getElementById('dept-dropdown');
+
+        deptBtn.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevents the click from reaching the window
+            deptDropdown.classList.toggle('hidden');
+        });
+
+        // Close dropdown when clicking anywhere else on the screen
+        window.addEventListener('click', function() {
+            if (!deptDropdown.classList.contains('hidden')) {
+                deptDropdown.classList.add('hidden');
+            }
+        });
+
+        // Close dropdown when a link inside it is clicked
+        document.querySelectorAll('#dept-dropdown a').forEach(link => {
+            link.addEventListener('click', () => {
+                deptDropdown.classList.add('hidden');
             });
         });
 
