@@ -185,6 +185,27 @@
 </head>
 
 <body class="bg-gray-50">
+    <!-- Founder Popup Modal -->
+<div id="founder-popup" class="fixed inset-0 z-[3000] flex items-center justify-center bg-black bg-opacity-75 hidden">
+    <div class="relative bg-white p-2 rounded-lg max-w-sm md:max-w-md mx-4 shadow-2xl transform transition-all">
+        <!-- Close Button -->
+        <button id="close-popup" class="absolute -top-4 -right-4 bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-700 transition z-10">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <!-- Image Container -->
+        <div class="text-center">
+            <img src="khalil.jpg" alt="Founder" class="rounded-lg w-full h-auto object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-blue-900">Nuhu Bashir Khalil</h3>
+                <p class="text-gray-600 font-medium">Founder/Director</p>
+                <button id="close-popup-btn" class="mt-4 w-full bg-blue-900 text-white py-2 rounded hover:bg-blue-800 transition">
+                    Continue to Website
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Navigation -->
     <nav id="navbar" class="bg-white shadow-md transition-all duration-300">
@@ -426,7 +447,7 @@ The college is founded on the belief that health and education are fundamental h
                 <div class="bg-gray-50 rounded-xl shadow-lg p-8 max-w-4xl mx-auto profile-card">
                     <div class="grid md:grid-cols-3 gap-8 items-center">
                         <div class="md:col-span-1">
-                            <img src="Nuhu_bashir.jpeg" alt="Founder" class="rounded-lg shadow-md w-full">
+                            <img src="khalil.jpg" alt="Founder" class="rounded-lg shadow-md w-full">
                         </div>
                         <div class="md:col-span-2">
                             <h4 class="text-2xl font-bold text-gray-900 mb-2">B.Sc., MBA(in view) Nuhu Bashir Khalil</h4>
@@ -1310,8 +1331,30 @@ The college is founded on the belief that health and education are fundamental h
                 alert('Please fill in all required fields');
             }
         });
+        // Founder Popup Logic
+window.addEventListener('load', function() {
+    const popup = document.getElementById('founder-popup');
+    const closeBtn = document.getElementById('close-popup');
+    const continueBtn = document.getElementById('close-popup-btn');
+
+    // Show the popup immediately on load
+    popup.classList.remove('hidden');
+
+    // Function to close popup
+    const closePopup = () => {
+        popup.classList.add('hidden');
+    };
+
+    // Close on clicking 'X', the 'Continue' button, or outside the box
+    closeBtn.addEventListener('click', closePopup);
+    continueBtn.addEventListener('click', closePopup);
+    popup.addEventListener('click', (e) => {
+        if (e.target === popup) closePopup();
+    });
+});
     </script>
 
-<script src="https://public-frontend-cos.metadl.com/commonfile/appPlugins-atoms-prod-1768232029834.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script></body>
+<script src="https://public-frontend-cos.metadl.com/commonfile/appPlugins-atoms-prod-1768232029834.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
 
 </html>
